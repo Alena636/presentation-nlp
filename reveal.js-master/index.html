@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section style="font-size: 68px; font-weight: bold;">NLP</section>
+				<section>
+					<div style="margin-bottom: 30px; color: red; font-weight: bold;">What is Natural Language Processing (NLP)?</div>
+					<p>NLP is the ability of a computer program to understand human language as it is spoken and written - referred to as natural language.</p>
+					<img style="width: 500px;" src="assets/nlp.png" alt="nlp" />
+				</section>
+				<section>
+					<div style="color: red; font-weight: bold;">What is Natural Language Processing (NLP) Used For?</div>
+				</section>
+				<section>
+					<div>Machine translation</div>
+					<img style="width: 400px;" src="assets/Google-Translate.jpg" alt="google-translate" />
+				</section>
+				<section>
+					<div>Grammatical error correction</div>
+					<img style="width: 400px;" src="assets/grammarly-logo.png" alt="grammarly" />
+				</section>
+				<section>
+					<div>Text generation</div>
+					<img style="width: 400px;" src="assets/gpt.png" alt="gpt" />
+				</section>
+				<section>
+					<div>Sentiment analysis</div>
+					<img style="width: 500px;" src="assets/sentiment.png" alt="sentiment-analysis" />
+				</section>
+				<section>
+					<div style="color: red; font-weight: bold; margin-bottom: 30px;">How does natural language processing work?</div>
+					<img style="width: 600px;" src="assets/nlp_work.png" alt="nlp-work" />
+				</section>
+				<section style="font-weight: bold; color: red;">
+					Javascript Libraries for NLP
+				</section>
+				<section>
+					<img style="width: 600px;" src="assets/nlpjs.gif" alt="nlp-js" />
+				</section>
+				<section>
+					<img style="width: 600px;" src="assets/compromise.png" alt="compromise" />
+				</section>
+				<section>
+					<img style="width: 600px;" src="assets/neuro.png" alt="compromise" />
+				</section>
+				<section style="color: red; font-weight: bold;">
+					How to use NLP.js
+				</section>
+				<section>
+					<div style="font-size: 54px;">1. Install the library</div>
+					<p style="color: grey;">npm i @nlpjs/basic</p>
+				</section>
+				<section>
+					<div style="font-size: 54px;">2. Create the code</div>
+					<img style="width: 500px;" src="assets/code-expample.png" alt="code-example" />
+				</section>
+				<section>
+					<div style="font-size: 54px;">3. Extracting the corpus into a file</div>
+					<div style="display: flex; gap: 20px;">
+						<img style="width: 500px;" src="assets/Screenshot_1.png" alt="code-example" />
+						<img style="width: 500px;" src="assets/Screenshot_2.png" alt="code-example" />
+					</div>
+				</section>
+				<section>
+					<div style="font-size: 54px;">4. Extracting the configuration into a file</div>
+					<div style="display: flex; gap: 20px;">
+						<img style="width: 500px;" src="assets/Screenshot_3.png" alt="code-example" />
+						<img style="width: 500px;" src="assets/Screenshot_4.png" alt="code-example" />
+					</div>
+				</section>
+				<section>
+					<div style="font-size: 54px;">5. Creating your first pipeline</div>
+					<div style="display: flex; gap: 20px;">
+						<img style="width: 400px;" src="assets/Screenshot_5.png" alt="code-example" />
+						<img style="width: 400px;" src="assets/Screenshot_6.png" alt="code-example" />
+					</div>
+				</section>
+				<section>
+					<div style="font-size: 54px;">6. Adding your first connector</div>
+					<div style="display: flex; gap: 20px;">
+						<img style="width: 400px;" src="assets/Screenshot_7.png" alt="code-example" />
+						<img style="width: 400px;" src="assets/Screenshot_8.png" alt="code-example" />
+					</div>
+				</section>
+				<section>
+					<div style="font-size: 54px;">7. Adding Multilanguage</div>
+					<p style="color: grey;">npm i @nlpjs/lang-es</p>
+				</section>
+				<section>
+					<img style="width: 400px; height: 246px;" src="assets/Screenshot_9.png" alt="code-example" />
+					<img style="width: 400px;" src="assets/Screenshot_10.png" alt="code-example" />
+				</section>
+				<section>
+					<div style="font-size: 54px;">8. Adding API and WebChat</div>
+					<p style="color: grey;">npm i @nlpjs/express-api-server</p>
+					<img style="width: 600px;" src="assets/Screenshot_11.png" alt="code-example" />
+				</section>
+				<section>
+					<div style="font-size: 54px;">the Directline Connector</div>
+					<p style="color: grey;">npm i @nlpjs/directline-connector</p>
+					<p style="margin-top: 30px; font-size: 24px;">Restart your application and navigate once more to <span style="color: red;">http://localhost:3000</span> and you'll be able to chat with your bot.</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
